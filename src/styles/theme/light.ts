@@ -8,5 +8,5 @@ export default {
         subText: '#6c7293',
         border: '#6d5bf5',
         icons: '#6d5bf5',
-    }
+    },
 }

@@ -11,6 +11,6 @@ declare module 'styled-components' {
             subText: string;
             border: string;
             icons: string;
-        }
+        };
     }
 }

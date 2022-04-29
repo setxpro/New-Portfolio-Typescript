@@ -12,4 +12,17 @@ export default createGlobalStyle`
         font-size: calc(60% + 0.8vmin);
         font-family: 'Nunito', sans-serif;
     }
+
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 `;
