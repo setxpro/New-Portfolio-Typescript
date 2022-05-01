@@ -11,6 +11,10 @@ export const Container = styled.div`
         justify-content: flex-start;
         padding: 1rem;
     }
+
+    @media (max-width: 543px) {
+        flex-direction: column;
+    }
     
     h2 {
         text-align: center;

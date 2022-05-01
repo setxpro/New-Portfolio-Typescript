@@ -36,12 +36,12 @@ const InfoToContact: React.FC = () => {
             Google Maps</a>
           </h4>
           </Content>
-          <Content>
+          <Content  className='none'>
           <strong>Residencial</strong>
           <span></span>
           <h4>21 3484-5929</h4>
         </Content>
-          <Content>
+          <Content  className='none'>
           <strong>Endereço</strong>
           <span></span>
           <h4>Brasil, Rio de Janeiro - RJ - Campo Grande. 23042-420</h4>

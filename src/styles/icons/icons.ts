@@ -25,7 +25,9 @@ export const ArrowGoHome = styled(BsFillArrowUpSquareFill)<{disappearHeader: boo
     position: fixed;
     bottom: 20px;
     right: 20px;
-
+    @media (max-width: 778px) {
+        bottom: 35px;  
+    }
     opacity: ${props => props.disappearHeader ? '1' : '0'};
 
     color: #44DD;

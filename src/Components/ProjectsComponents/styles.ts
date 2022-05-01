@@ -20,8 +20,16 @@ export const Container = styled.div`
         margin: auto;
     }
 
-    img {
+    @media (max-width: 610px) {
+        margin: auto;
+        width: 95%;
+    }
 
+    img {
+            @media (max-width: 610px) {
+            margin: auto;
+            width: 70%;
+        }
         width: 350px;
         height: 150px;
         border-radius: 1rem;
@@ -74,6 +82,10 @@ export const Container = styled.div`
             background: transparent;
             color: ${props => props.theme.colors.icons};
             cursor: pointer;
+
+            @media (max-width: 610px) {
+                margin-bottom: 1rem;
+            }
         }
     }
 `;

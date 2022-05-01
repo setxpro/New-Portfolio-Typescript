@@ -35,4 +35,8 @@ export const ContentArea = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
+    @media (max-width: 610px) {
+        grid-template-columns: 1fr;
+    }
+
 `;

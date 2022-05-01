@@ -18,6 +18,13 @@ export const ContentLeft = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 610px) {
+       
+        h1, h2 {
+            text-align: center;
+        }
+    }
+
     h1 {
         font-size: 7em;
         color: ${props => props.theme.colors.subText};

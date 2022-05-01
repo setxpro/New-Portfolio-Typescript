@@ -16,6 +16,15 @@ export const Container = styled.div`
         height: 200px;
     }
 
+    @media (max-width: 610px) {
+        width: 250px;
+    }
+
+    @media (max-width: 543px) {
+        width: 220px;
+        height: 200px;
+    }
+
     h2 {
         width: 100%;
         text-overflow: ellipsis;

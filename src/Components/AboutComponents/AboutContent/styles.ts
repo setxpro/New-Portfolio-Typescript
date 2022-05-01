@@ -20,6 +20,15 @@ export const Container = styled.div`
     width: 95%;
     flex-direction: column;
   }
+  @media (max-width: 610px) {
+    width: 95%;
+    gap: 3rem;
+  }
+  @media (max-width: 543px) {
+    width: 95%;
+    gap: 4rem;
+  }
+  
 `;
 export const ContentLeft = styled.div`
     width: 50%;
@@ -37,6 +46,13 @@ export const ContentLeft = styled.div`
     @media (max-width: 810px)  {
       width: 100%;
       height: 250px;
+    }
+
+    @media (max-width: 610px) {
+      width: 100%;
+    }
+    @media (max-width: 543px) {
+      width: 100%;
     }
 
     h2 {
@@ -113,6 +129,13 @@ export const ContentRight = styled.div`
     @media (max-width: 810px)  {
       width: 100%;
     }
+
+    @media (max-width: 610px) {
+      width: 100%;
+    }
+    @media (max-width: 543px) {
+      width: 100%;
+    }
 `;
 export const ContentAreaMoreInfo = styled.div`
     display: flex;
@@ -120,6 +143,10 @@ export const ContentAreaMoreInfo = styled.div`
     justify-content: center;
     margin-left: 100px;
     gap: 1rem;
+
+    @media (max-width: 543px) {
+      margin-left: 0;
+    }
 
     > p {
       display: flex;

@@ -13,6 +13,17 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media (max-width: 543px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .none {
+            display: none;
+        }
+    }
+
+    
     
 `;
 export const Content = styled.div`

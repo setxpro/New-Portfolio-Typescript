@@ -68,4 +68,8 @@ export const Content = styled.div`
     @media (max-width: 810px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    @media (max-width: 610px) {
+        grid-template-columns: 1fr 1fr;
+    }
 `;

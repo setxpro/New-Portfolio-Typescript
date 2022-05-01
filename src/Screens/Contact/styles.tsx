@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100vh;
     width: 100%;
     background-color: ${props => props.theme.colors.main};
     user-select: auto !important;
@@ -32,18 +31,32 @@ export const ContentAreaContact = styled.div`
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 543px) {
+        flex-direction: column;
+    }
 `;
 
 export const ContentLeft = styled.div`
     width: 50%;
     height: 100%;
     padding: 1rem;
+
+    @media (max-width: 778px) {
+        width: 40%;
+    }
+    @media (max-width: 543px) {
+        width: 100%;
+    }
 `;
 export const ContentRight = styled.div`
     width: 50%;
     height: 100%;
     padding: 1rem;
     border-left: 1px dashed ${props => props.theme.colors.border};
+
+    @media (max-width: 543px) {
+        width: 100%;
+    }
 `;
 export const AreaTitle = styled.div`
     width: 100%;
