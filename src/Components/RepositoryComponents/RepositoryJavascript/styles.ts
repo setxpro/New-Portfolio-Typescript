@@ -24,6 +24,22 @@ export const Container = styled.div`
         width: 220px;
         height: 200px;
     }
+    @media (max-width: 490px) {
+        width: 420px;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 424px) {
+        margin: auto;
+        width: 390px;
+    }
+    @media (max-width: 394px) {
+        margin: auto;
+        width: 350px;
+    }
 
     h2 {
         width: 100%;

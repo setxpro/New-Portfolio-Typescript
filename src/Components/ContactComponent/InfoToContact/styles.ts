@@ -22,8 +22,6 @@ export const Container = styled.div`
             display: none;
         }
     }
-
-    
     
 `;
 export const Content = styled.div`

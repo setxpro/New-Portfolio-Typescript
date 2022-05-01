@@ -10,6 +10,12 @@ export const Container = styled.div`
     @media (max-width: 778px) {
         width: 320px;
     }
+    @media (max-width: 490px) {
+        width: 390px;
+    }
+    @media (max-width: 394px) {
+        width: 350px;
+    }
 
     display: flex;
     flex-direction: column;

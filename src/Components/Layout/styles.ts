@@ -7,10 +7,10 @@ export const Container = styled.div`
     @media (max-width: 610px) { width: 600px; } // Completed
     @media (max-width: 543px) { width: 533px; } // Completed
 
-    @media (max-width: 543px) { width: 480px; } // Inprogress
-    @media (max-width: 543px) { width: 414px; } // Inprogress
+    @media (max-width: 490px) { width: 480px; } // Completed
+    @media (max-width: 424px) { width: 424px; } // Completed
     
-    @media (max-width: 543px) { width: 384px; } // Inprogress
-    @media (max-width: 543px) { width: 360px; } // Inprogress
-    @media (max-width: 543px) { width: 320px; } // Inprogress
+    @media (max-width: 394px) { width: 384px; } // Completed
+    @media (max-width: 370px) { width: 360px; } // Completed
+    @media (max-width: 330px) { width: 320px; } // Inprogress
 `;

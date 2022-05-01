@@ -28,6 +28,24 @@ export const Container = styled.div`
     width: 95%;
     gap: 4rem;
   }
+  @media (max-width: 490px) {
+    width: 95%;
+    gap: 5rem;
+  }
+
+  @media (max-width: 424px) {
+    width: 95%;
+    gap: 7rem;
+  }
+  @media (max-width: 360px) {
+    width: 95%;
+    gap: 9rem;
+  }
+  @media (max-width: 320px) {
+    width: 95%;
+      gap: 10rem;
+  }
+  
   
 `;
 export const ContentLeft = styled.div`
@@ -52,6 +70,21 @@ export const ContentLeft = styled.div`
       width: 100%;
     }
     @media (max-width: 543px) {
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    @media (max-width: 424px) {
+      width: 100%;
+    }
+    @media (max-width: 384px) {
+      width: 100%;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+    @media (max-width: 320px) {
       width: 100%;
     }
 
@@ -134,6 +167,21 @@ export const ContentRight = styled.div`
       width: 100%;
     }
     @media (max-width: 543px) {
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    @media (max-width: 424px) {
+      width: 100%;
+    }
+    @media (max-width: 384px) {
+      width: 100%;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+    @media (max-width: 320px) {
       width: 100%;
     }
 `;

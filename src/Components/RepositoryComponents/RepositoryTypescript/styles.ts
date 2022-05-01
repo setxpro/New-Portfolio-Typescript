@@ -15,6 +15,17 @@ export const Container = styled.div`
         width: 220px;
         height: 200px;
     }
+    @media (max-width: 490px) {
+        width: 420px;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 424px) {
+        width: 390px;
+    }
 
     h2 {
         width: 100%;
