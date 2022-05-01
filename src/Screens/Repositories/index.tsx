@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Api } from '../../Api';
+import Layout from '../../Components/Layout';
 import RepositoryNavArea from '../../Components/RepositoryComponents';
 import RepositoryJavascript from '../../Components/RepositoryComponents/RepositoryJavascript';
 import RepositoryTypescript from '../../Components/RepositoryComponents/RepositoryTypescript';
@@ -42,6 +43,7 @@ const Repositories: React.FC = () => {
   }, [])
 
   return (
+    <Layout>
       <C.Container id="repositories">
           <C.Title>
                 <h1>Repositories</h1>
@@ -103,6 +105,7 @@ const Repositories: React.FC = () => {
             
           </C.Content>
       </C.Container>
+      </Layout>
   );
 }
 

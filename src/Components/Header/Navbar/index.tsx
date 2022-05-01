@@ -10,9 +10,11 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({name, link}) => {
   return (
-    <li>
-        <a href={link}>{name}</a>
+    <a href={link}>
+    <li className='active'>
+        {name}
     </li>
+    </a>
   );
 }
 

@@ -11,6 +11,11 @@ export const Container = styled.div`
     gap: 1rem;
     border: 1px dashed ${props => props.theme.colors.border};
 
+    @media (max-width: 810px) {
+        width: 220px;
+        height: 200px;
+    }
+
     h2 {
         width: 100%;
         text-overflow: ellipsis;

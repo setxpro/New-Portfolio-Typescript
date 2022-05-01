@@ -1,11 +1,12 @@
 import React from 'react';
 import ServicesComponents from '../../Components/ServicesComponents';
 import { ServicesItems } from '../../Components/ServicesComponents/ServicesItems';
-
+import Layout from '../../Components/Layout';
 import * as C from './styles';
 
 const Services: React.FC = () => {
   return (
+    <Layout>
       <C.Container id="services">
          <C.Title>
          <h1>Services</h1>
@@ -23,6 +24,7 @@ const Services: React.FC = () => {
                   
               </C.ContentArea>
       </C.Container>
+      </Layout>
   );
 }
 

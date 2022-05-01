@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     /* height: 100%; */
+    width: 100%;
     background-color: ${props => props.theme.colors.main};
 `;
 
@@ -60,11 +61,11 @@ export const Content = styled.div`
     margin: auto;
     gap: 1rem;
 
-    ::-webkit-scrollbar {
-        width: 4px;
+    @media (max-width: 1090px) and (min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    ::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 810px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
 `;

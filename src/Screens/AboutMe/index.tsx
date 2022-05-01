@@ -1,11 +1,13 @@
 import React from 'react';
 import AboutContent from '../../Components/AboutComponents/AboutContent';
 import { AboutItems, MoreInfo } from '../../Components/AboutComponents/AboutItems';
+import Layout from '../../Components/Layout';
 
 import * as C from './styles';
 
 const About: React.FC = () => {
   return (
+      <Layout>
       <C.Container id="about">
               <C.Title>
                 <h1>Sobre</h1>
@@ -22,6 +24,7 @@ const About: React.FC = () => {
                     />
               ))}
       </C.Container>
+      </Layout>
   );
 }
 

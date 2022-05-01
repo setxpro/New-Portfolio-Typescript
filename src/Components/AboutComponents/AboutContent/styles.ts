@@ -10,6 +10,16 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+
+  @media (max-width: 1080px) and (min-width: 900px) {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  @media (max-width: 810px) {
+    width: 95%;
+    flex-direction: column;
+  }
 `;
 export const ContentLeft = styled.div`
     width: 50%;
@@ -19,6 +29,15 @@ export const ContentLeft = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media (max-width: 1080px) and (min-width: 900px) {
+      width: 100%;
+      height: 250px;
+    }
+    @media (max-width: 810px)  {
+      width: 100%;
+      height: 250px;
+    }
 
     h2 {
       text-align: center;
@@ -56,6 +75,12 @@ export const ReactIcon = styled(FaReact)`
   color: ${props => props.theme.colors.icons};
   animation: rt 4s linear infinite;
 
+  @media (max-width: 1080px) and (min-width: 900px) {
+    display: none;
+  }
+  @media (max-width: 810px)  {
+    display: none;
+  }
   @keyframes rt {
       0% {
         transform: rotate(360deg);
@@ -81,13 +106,19 @@ export const ContentRight = styled.div`
     h2 {
       text-align: center;
     }
+
+    @media (max-width: 1080px) and (min-width: 900px) {
+      width: 100%;
+    }
+    @media (max-width: 810px)  {
+      width: 100%;
+    }
 `;
 export const ContentAreaMoreInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 100px;
-
     gap: 1rem;
 
     > p {

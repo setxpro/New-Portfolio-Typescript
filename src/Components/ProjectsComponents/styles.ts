@@ -15,6 +15,11 @@ export const Container = styled.div`
     border-radius: 1rem;
     overflow: hidden;
 
+    @media (max-width: 1090px) and (min-width: 900px) {
+        
+        margin: auto;
+    }
+
     img {
 
         width: 350px;

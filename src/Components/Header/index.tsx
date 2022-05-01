@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import { navbarItems } from './NavbarItems';
 
@@ -14,8 +14,13 @@ interface Props {
 
 const Header: React.FC<Props> = ({ toggleTheme, disappearHeader}) => {
 
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const wrapperMenu = () => setOpenMenu(!openMenu);
+
   return (
       <C.Container disappearHeader={disappearHeader}>
+          
           <C.Nav>
               <ul>
                   {navbarItems.map((item, index) => (
@@ -27,6 +32,22 @@ const Header: React.FC<Props> = ({ toggleTheme, disappearHeader}) => {
                     ))}
               </ul>
           </C.Nav>
+          <C.MenuMobileArea>
+          <C.Bars onClick={wrapperMenu}/>
+                    <C.NavMobile openMenu={openMenu}>
+                    
+                    <ul>
+                        {navbarItems.map((item, index) => (
+                                <Navbar
+                                    key={index}
+                                    name={item.name}
+                                    link={item.link}
+                                />
+                            ))}
+                    </ul>
+                </C.NavMobile>
+          </C.MenuMobileArea>
+
           <SwitchNavbar toggleTheme={toggleTheme}/>
       </C.Container>
   );

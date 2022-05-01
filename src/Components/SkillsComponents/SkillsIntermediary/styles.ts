@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 35%;
     border-right: 1px dashed ${props => props.theme.colors.border};
+    @media (max-width: 810px) {
+        width: 50%;
+        border: none;
+    }
 `;
 export const AreaIcon = styled.div`
    display: grid;

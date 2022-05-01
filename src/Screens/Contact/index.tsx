@@ -1,11 +1,13 @@
 import React from 'react';
 import FormEmailJs from '../../Components/ContactComponent/FormEmailJs';
 import InfoToContact from '../../Components/ContactComponent/InfoToContact';
+import Layout from '../../Components/Layout';
 
 import * as C from './styles';
 
 const Contact: React.FC = () => {
   return (
+    <Layout>
       <C.Container id="contact">
           <C.Title>
           <h1>Contact</h1>
@@ -21,6 +23,7 @@ const Contact: React.FC = () => {
                   </C.ContentRight>
               </C.ContentAreaContact>
       </C.Container>
+      </Layout>
   );
 }
 

@@ -8,4 +8,6 @@ export const Container = styled.div`
     grid-template-rows: 1fr;
     gap: 1.5rem;
 
+    
+
 `;

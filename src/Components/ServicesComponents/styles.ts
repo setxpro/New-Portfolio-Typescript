@@ -4,6 +4,10 @@ export const Container = styled.div`
     width: 360px;
     height: 315px;
 
+    @media (max-width: 1080px) and (min-width: 900px) {
+        width: 320px;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: center;

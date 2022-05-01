@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100vh;
+    width: 100%;
     padding: 60px 0;
     background-color: ${props => props.theme.colors.main};
 `;
@@ -30,4 +30,9 @@ export const Title = styled.div`
 export const ContentArea = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width: 810px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
 `;

@@ -9,6 +9,7 @@ import Main from './Components/Main';
 import ArrowTop from './utils/ArrowTop';
 import { Container } from './styles/AppStyle';
 import Footer from './Components/Footer';
+import Layout from './Components/Layout';
 
 const App: React.FC = () => {
 
@@ -36,12 +37,14 @@ const App: React.FC = () => {
 
   return (
       <ThemeProvider theme={theme}>
+        <Layout>
         <Container>
           <Header toggleTheme={toggleTheme} disappearHeader={disappearHeader}/>
           <Main/>
           <ArrowTop disappearHeader={disappearHeader}/>
           <Footer/>
         </Container>
+        </Layout>
       </ThemeProvider>
   );
 }

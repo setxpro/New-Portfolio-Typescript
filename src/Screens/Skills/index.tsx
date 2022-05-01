@@ -1,10 +1,11 @@
 import React from 'react';
 import SkillsComponents from '../../Components/SkillsComponents';
-
+import Layout from '../../Components/Layout';
 import * as C from './styles';
 
 const Skills: React.FC = () => {
   return (
+    <Layout>
       <C.Container id="skills">
           <C.Title>
             <h1>Skills</h1>
@@ -14,6 +15,7 @@ const Skills: React.FC = () => {
               <SkillsComponents/>
           </C.ContentAreaSkills>
       </C.Container>
+    </Layout>
   );
 }
 

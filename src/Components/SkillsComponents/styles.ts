@@ -5,6 +5,13 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     gap: 3rem;
+    
+    @media (max-width: 810px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    
     h2 {
         text-align: center;
         margin-bottom: 2rem;
