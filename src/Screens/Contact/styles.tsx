@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 100vh;
     background-color: ${props => props.theme.colors.main};
-    box-shadow: 2px 2px 15px #000;
     user-select: auto !important;
 `;
 export const Title = styled.div`

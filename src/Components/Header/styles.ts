@@ -32,11 +32,6 @@ export const Nav = styled.nav`
                 text-decoration: none;
                 font-size: 1.2em;
                 color: #FFF;
-                transition: all 0.5s ease;
-
-                &:hover {
-                    color: #444ddd;
-                }
             }
         }
     }

@@ -4,7 +4,6 @@ export const Container = styled.div`
     height: 100vh;
     padding: 20px 0;
     background-color: ${props => props.theme.colors.main};
-    box-shadow: 30px 50px 100px #000;
 `;
 export const Title = styled.div`
     height: 50px;

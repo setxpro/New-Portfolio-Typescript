@@ -11,5 +11,6 @@ export default {
         icons: '#6d5bf5',
         buttheme: '#333',
         button: '#FFF',
+        mode: true,
     },
 }

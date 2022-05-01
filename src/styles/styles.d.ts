@@ -14,6 +14,7 @@ declare module 'styled-components' {
             icons: string;
             buttheme:string;
             button: string;
+            mode: boolean;
         };
     }
 }

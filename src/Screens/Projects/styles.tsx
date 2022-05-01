@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100vh;
+    /* height: 100vh; */
     padding: 60px 0;
     background-color: ${props => props.theme.colors.main};
-    box-shadow: 30px 50px 100px #000;
 `;
+
 export const Title = styled.div`
     height: 90px;
     display: flex;
@@ -25,4 +25,11 @@ export const Title = styled.div`
         border: 2px solid ${props => props.theme.colors.border};
         background: ${props => props.theme.colors.border};
     }
+`;
+
+export const Content = styled.div`
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 `;

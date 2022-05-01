@@ -10,7 +10,8 @@ export default {
         border: '#54eaba',
         icons: '#54eaba',
         buttheme: '#FFFF',
-        button: '#FFF'
+        button: '#FFF',
+        mode: false,
     }
 
 }
