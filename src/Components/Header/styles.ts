@@ -15,6 +15,8 @@ export const Container = styled.div<{disappearHeader: boolean}>`
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+
+    z-index: 99;
 `;
 export const Nav = styled.nav`
     ul {
@@ -29,7 +31,7 @@ export const Nav = styled.nav`
             a {
                 text-decoration: none;
                 font-size: 1.2em;
-                color: ${props => props.theme.colors.text};
+                color: #FFF;
                 transition: all 0.5s ease;
 
                 &:hover {

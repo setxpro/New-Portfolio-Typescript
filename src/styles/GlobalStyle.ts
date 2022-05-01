@@ -6,11 +6,12 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        user-select: none;
+        
     }
     html {
         font-size: calc(60% + 0.8vmin);
         font-family: 'Nunito', sans-serif;
+        user-select: none;
     }
 
 

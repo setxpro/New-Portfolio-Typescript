@@ -2,5 +2,5 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     height: 100%;
-    background: ${props => props.theme.colors.icons};
+    background: ${props => props.theme.colors.background};
 `;

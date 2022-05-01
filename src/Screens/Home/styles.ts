@@ -6,8 +6,8 @@ export const Container = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #FFF;
-
+    color: #FFF;    
+    box-shadow: 30px 50px 100px #000;
     display: flex;
     justify-content: center;
     align-items: center;

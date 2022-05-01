@@ -8,7 +8,7 @@ const Home: React.FC = () => {
           <C.ContentLeft>
             <h3>Olá, meu nome é</h3>
             <h1>Patrick Anjos</h1>
-            <h2>Desenvolvedor <strong>Frontend</strong></h2>
+            <h2>Eu sou Desenvolvedor <strong>Frontend</strong></h2>
           </C.ContentLeft>
         <C.ContentRight>
 
