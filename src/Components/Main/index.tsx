@@ -7,6 +7,7 @@ import Repositories from '../../Screens/Repositories';
 import Services from '../../Screens/Services';
 import Skills from '../../Screens/Skills';
 import Layout from '../Layout';
+import Widget from '../Widget/Widget';
 
 import * as C from './styles';
 
@@ -23,6 +24,7 @@ const Main: React.FC = () => {
           <Projects/>
           <Repositories/>
           <Contact/>
+          <Widget/>
       </C.Container>
     </Layout>
   );

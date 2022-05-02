@@ -10,6 +10,7 @@ import ArrowTop from './utils/ArrowTop';
 import { Container } from './styles/AppStyle';
 import Footer from './Components/Footer';
 import Layout from './Components/Layout';
+import Widget from './Components/Widget/Widget';
 
 const App: React.FC = () => {
 
@@ -45,6 +46,7 @@ const App: React.FC = () => {
           <Footer/>
         </Container>
         </Layout>
+      
       </ThemeProvider>
   );
 }
