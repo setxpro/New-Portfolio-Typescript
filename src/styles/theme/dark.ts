@@ -12,6 +12,10 @@ export default {
         buttheme: '#FFFF',
         button: '#FFF',
         mode: false,
+        widgetbackground: '#001219',
+        widgetItem: '#27272A',
+        widgetText: '#F4F4F5',
+
     }
 
 }

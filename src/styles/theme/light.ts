@@ -12,5 +12,8 @@ export default {
         buttheme: '#333',
         button: '#FFF',
         mode: true,
+        widgetbackground: '#FFF',
+        widgetItem: '#F8EDEB',
+        widgetText: '#333',
     },
 }

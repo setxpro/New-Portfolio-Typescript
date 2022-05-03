@@ -22,8 +22,9 @@ export const Button = styled(Popover.Button)`
         gap: 5px;
 
         transition: all 1s ease;
-
+        border-radius: 50%;
         &:hover {
+           
             border-radius: 5%;
             span {
                 max-width: 100%;
@@ -31,6 +32,7 @@ export const Button = styled(Popover.Button)`
         }
 
         span {
+            transition: all .5s ease;
             font-size: 1rem;
             max-width: 0;
             overflow: hidden;
@@ -38,6 +40,10 @@ export const Button = styled(Popover.Button)`
 `;
 export const Container = styled(Popover)`
     position: fixed;
-    bottom: 50%;
+    bottom: 20%;
     right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 `;

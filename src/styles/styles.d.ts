@@ -15,6 +15,9 @@ declare module 'styled-components' {
             buttheme:string;
             button: string;
             mode: boolean;
+            widgetbackground: string;
+            widgetItem: string;
+            widgetText: string;
         };
     }
 }
