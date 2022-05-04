@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Chat, Button, Container } from './styles';
 import { Popover } from '@headlessui/react'
-import { WidgetForm } from './WidgetForm/WidgetForm';
+import { WidgetForm } from './WidgetForm';
 
 const Widget: React.FC = () => {
   return (

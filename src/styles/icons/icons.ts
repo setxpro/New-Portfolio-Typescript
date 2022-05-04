@@ -21,6 +21,18 @@ import { FaVuejs } from 'react-icons/fa';
 import { SiPython } from 'react-icons/si';
 
 
+import { BsArrowLeftShort } from 'react-icons/bs';
+
+export const ArrowLeftIcon = styled(BsArrowLeftShort)`
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(161, 161, 170, 1);
+
+    &:hover {
+        color: rgba(244, 244, 245, 1);
+    }
+`;
+
 export const ArrowGoHome = styled(BsFillArrowUpSquareFill)<{disappearHeader: boolean}>`
     position: fixed;
     bottom: 20px;
