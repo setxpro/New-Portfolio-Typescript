@@ -12,10 +12,16 @@ export default {
         buttheme: '#FFFF',
         button: '#FFF',
         mode: false,
-        widgetbackground: '#001219',
-        widgetItem: '#27272A',
-        widgetText: '#F4F4F5',
-
+        titleHome: '#54eaba'
+    },
+    widget: {
+        backgroundButton: '#54eaba',
+        colorButton: '#27272A',
+        surfacePrimary: '#18181B',
+        surfaceSecondary: '#27272A',
+        textPrimary: '#F4F4F5',
+        textSecondary: '#A1A1AA',
+        borderItemsWidget: '#54eaba',
     }
 
 }

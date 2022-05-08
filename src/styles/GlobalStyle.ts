@@ -12,6 +12,7 @@ export default createGlobalStyle`
         font-size: calc(60% + 0.8vmin);
         font-family: 'Nunito', sans-serif;
         user-select: none;
+        transition: all 1s ease;
     }
 
 

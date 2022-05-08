@@ -7,7 +7,7 @@ export const Content = styled.div`
     width: 100%;
 
     button {
-        background: ${props => props.theme.colors.widgetItem}; // Alter
+        background: ${props => props.theme.widget.surfaceSecondary}; // Alter
         border-radius: 5px;
         padding: 1.25rem;
         width: 6rem;
@@ -21,14 +21,14 @@ export const Content = styled.div`
         cursor: pointer;
 
         span {
-            color: ${props => props.theme.colors.widgetText}; 
+            color: ${props => props.theme.widget.textPrimary}; 
         }
         transition: all 1s ease;
         &:hover {
-            border: 2px solid #8257e6;
+            border: 2px solid ${props => props.theme.widget.borderItemsWidget};
         }
         &:focus {
-            border: 2px solid #8257e6;
+            border: 2px solid ${props => props.theme.widget.borderItemsWidget};
             outline: none;
         }
     }

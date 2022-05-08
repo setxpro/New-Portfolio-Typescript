@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from 'react';
 import { FeedbackType, feedbackTypes } from '../..';
 import { ArrowLeftIcon } from '../../../../../styles/icons/icons';
 import CloseButton from '../../../CloseButton';
+import { apiwidget } from '../../../lib';
 import ScreenshotButton from '../../ScreenshotButton';
 
 import * as C from './styles';
@@ -24,12 +25,21 @@ const FeedbackContentStep: React.FC<FeedbackContentStepProps> = ({
 
   const feedbackInfo = feedbackTypes[feedbackType];
 
-  function handleSubmitFeedback(e: FormEvent) {
+  async function handleSubmitFeedback(e: FormEvent) {
       e.preventDefault();
-      console.log({
-        screenshot,
-        comment
-      });
+      // console.log({
+      //   screenshot,
+      //   comment
+      // });
+
+      await apiwidget.post('/feedbacks', {
+        type: feedbackType,
+        comment,
+        screenshot
+      })
+
+      console.log(apiwidget)
+
       setComment('');
       onFeedbackSended();
   }

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import Switch from 'react-switch';
-import { shade } from 'polished';
 
 interface Props {
     toggleTheme: () => void;
@@ -20,8 +19,8 @@ const SwitchNavbar: React.FC<Props> = ({toggleTheme}) => {
     height={10}
     width={40}
     handleDiameter={20}
-    offColor={shade(0.15, colors.main)}
-    onColor={shade(0.15, colors.subText)}
+    offColor={ colors.icons }
+    onColor={ colors.icons }
   />
   );
 }

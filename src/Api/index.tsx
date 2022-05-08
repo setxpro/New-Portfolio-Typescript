@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const Api = axios.create({
-    baseURL: 'https://api.github.com/users/setxpro',
-})
+    baseURL: process.env.REACT_APP_API_GITHUB,
+});

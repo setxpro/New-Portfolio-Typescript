@@ -14,9 +14,8 @@ export const Container = styled.div`
 export const AreaIcon = styled.div`
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 1rem;
-   padding: .5rem;
-   margin-right: 40px;
+   gap: .5rem;
+   margin-right: 30px;
 
    @media (max-width: 543px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;

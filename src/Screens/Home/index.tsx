@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <C.Container id="home">
           <C.ContentLeft>
             <h1>Patrick Anjos</h1>
-            <h2>Eu sou Desenvolvedor <strong>Frontend</strong></h2>
+            <h2>I'm <strong>Frontend</strong> Developer</h2>
           </C.ContentLeft>
       </C.Container>
     </Layout>

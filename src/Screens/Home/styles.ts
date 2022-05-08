@@ -32,8 +32,9 @@ export const ContentLeft = styled.div`
     h2 {
         font-size: 3rem;
         color: #5c6274;
+        text-align: center;
         strong {
-            color: #6d5bf5;
+            color: ${props => props.theme.colors.titleHome};
         }
     }
     h3 {

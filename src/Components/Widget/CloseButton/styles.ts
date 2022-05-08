@@ -2,6 +2,7 @@ import { Popover } from '@headlessui/react';
 import styled from 'styled-components';
 
 import { IoIosClose } from 'react-icons/io';
+import { shade } from 'polished';
 
 export const ButtonCloseArea = styled(Popover.Button)`
     position: absolute;
@@ -15,6 +16,11 @@ export const ButtonCloseArea = styled(Popover.Button)`
 
 export const CloseButtonIcon = styled(IoIosClose)`
     font-size: 2rem;
-    color: #888; // alter color in type 
     cursor: pointer;
+    color: ${props => props.theme.widget.borderItemsWidget};
+
+        &:hover {
+            color: ${props => shade(0.15, `${props.theme.widget.borderItemsWidget}`)};
+        }
+   
 `;

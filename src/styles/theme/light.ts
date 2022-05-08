@@ -4,16 +4,23 @@ export default {
         background: '#4000ff',
         navbar: '#444ddd',
         main: '#ffffff',
-        cards: '#e9ecef',
         text: '#333',
         subText: '#6c7293',
+        cards: '#e9ecef',
         border: '#6d5bf5',
         icons: '#6d5bf5',
         buttheme: '#333',
         button: '#FFF',
         mode: true,
-        widgetbackground: '#FFF',
-        widgetItem: '#F8EDEB',
-        widgetText: '#333',
+        titleHome: '#6d5bf5'
     },
+    widget: {
+        backgroundButton: '#6d5bf5',
+        colorButton: '#FFF',
+        surfacePrimary: '#F4F4F5',
+        surfaceSecondary: '#EEE', 
+        textPrimary: '#18181B',
+        textSecondary: '#27272A',
+        borderItemsWidget: '#4000ff',
+    }
 }

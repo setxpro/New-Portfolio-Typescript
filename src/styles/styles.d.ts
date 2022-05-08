@@ -15,9 +15,16 @@ declare module 'styled-components' {
             buttheme:string;
             button: string;
             mode: boolean;
-            widgetbackground: string;
-            widgetItem: string;
-            widgetText: string;
+            titleHome: string;
+        };
+        widget: {
+            backgroundButton: string;
+            colorButton: string;
+            surfacePrimary: string;
+            surfaceSecondary: string;
+            textPrimary: string;
+            textSecondary: string;
+            borderItemsWidget: string;
         };
     }
 }

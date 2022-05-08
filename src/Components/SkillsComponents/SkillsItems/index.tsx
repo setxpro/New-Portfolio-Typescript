@@ -11,16 +11,17 @@ import {
     ReactI, 
     SassIcon, 
     StyledComponentsIcon, 
+    JavaIcon,
     TypescriptIcon, 
-    VueJs 
+    VueJs
 } from "../../../styles/icons/icons";
 
 export const SkillsItemsExperience = [
     {name: 'ReactJS', icon: <ReactI/>},
     {name: 'Javascript', icon: <JavaScriptIcon/>},
+    {name: 'SC', icon: <StyledComponentsIcon/>},
     {name: 'HTML5', icon: <HTMLIcon/>},
     {name: 'CSS3', icon: <CssIcon/>},
-    {name: 'Styled-Components', icon: <StyledComponentsIcon/>},
 ]
 
 export const SkilsItemsIntermediaryDB = [
@@ -34,6 +35,7 @@ export const SkilsItemsIntermediaryDB = [
 
 export const SkillsIHaveInterestedDB = [
     {name: 'VueJS', icon: <VueJs/>},
+    {name: 'Java', icon: <JavaIcon/>},
     {name: 'NodeJS', icon: <NodeJsIcon/>},
     {name: 'Python', icon: <PythonIcon/>},
 ]

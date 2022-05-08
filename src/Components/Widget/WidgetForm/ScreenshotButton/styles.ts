@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import { AiOutlineCamera } from 'react-icons/ai';
 import { BsTrash } from 'react-icons/bs';
+import { url } from "inspector";
 
 export const CameraIcon = styled(AiOutlineCamera)`
     color: rgba(244, 244, 245, 1);
@@ -15,7 +16,7 @@ export const ButtonContainer = styled.button`
     padding: 1.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    background: rgba(39, 39, 42, 1);
+    background: #27272A;
     border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
@@ -35,7 +36,7 @@ export const ButtonContainer = styled.button`
     }
 `;
 
-export const ButtonScreenshot = styled.button`
+export const ButtonScreenshot = styled.button<{screenshot: string | null}>`
     padding: 0.25rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -47,6 +48,10 @@ export const ButtonScreenshot = styled.button`
     
     background: rgba(39, 39, 42, 1);
     cursor: pointer;
+
+    background-image: ${props => props.screenshot && `url(${props.screenshot})`};
+    background-position: center;
+    background-size: 100px;
 
     &:hover {
         color: rgba(244, 244, 245, 1)

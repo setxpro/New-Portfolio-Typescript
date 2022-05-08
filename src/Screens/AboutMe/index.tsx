@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <Layout>
       <C.Container id="about">
               <C.Title>
-                <h1>Sobre</h1>
+                <h1>About me</h1>
                 <span></span>
               </C.Title>
               {AboutItems.map((item, index) => (

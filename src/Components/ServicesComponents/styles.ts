@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -25,7 +26,7 @@ export const Container = styled.div`
     margin: auto;
     margin-top: 2rem;
     padding: 5px;
-    background: ${props => props.theme.colors.cards};
+    background: ${props => shade(0.20, `${props.theme.colors.cards}`)};
 
     border-radius: 1rem;
     cursor: pointer;
@@ -33,7 +34,7 @@ export const Container = styled.div`
     transition: all 1s ease;
 
     &:hover {
-        background: ${props => props.theme.colors.icons};
+        background: ${props => props.theme.colors.cards};
         color: ${props => props.theme.colors.text};
     }
 

@@ -17,7 +17,6 @@ export const Title = styled.div`
     h1 {
         margin-top: 3.5rem;
         font-size: 2rem;
-       
     }
 
     span {

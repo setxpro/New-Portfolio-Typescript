@@ -104,7 +104,11 @@ export const Buttons = styled.div`
    width: 100%;
    margin-top: 2rem;
    
-    > button {
+    a {
+
+      text-decoration: none;
+
+      > button {
       padding: 8px 15px;
       border: 1px solid ${props => props.theme.colors.border};
       color:  ${props => props.theme.colors.buttheme};
@@ -116,6 +120,7 @@ export const Buttons = styled.div`
         background: ${props => props.theme.colors.icons};
         color: ${props => props.theme.colors.buttheme};
       }
+    }
     }
 `;
 

@@ -23,7 +23,7 @@ export const Container = styled.div`
         }
 
         &:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: ${props => props.theme.colors.icons};
         }
     }
 `;

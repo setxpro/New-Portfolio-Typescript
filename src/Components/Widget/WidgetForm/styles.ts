@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.colors.widgetbackground};
+    background-color: ${props => props.theme.widget.surfacePrimary};
     padding: 1rem;
     position: relative;
     margin-bottom: 1rem;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     header {
 
         span {
-            color: ${props => props.theme.colors.widgetText}; 
+            color: ${props => props.theme.widget.textPrimary}; 
         }
 
     }
@@ -25,7 +25,7 @@ export const Container = styled.div`
         a {
             text-decoration: underline;
             text-underline-offset: 4px;
-            color: ${props => props.theme.colors.widgetText};
+            color: ${props => props.theme.widget.textPrimary};
             font-size: 12px;
         }
     }

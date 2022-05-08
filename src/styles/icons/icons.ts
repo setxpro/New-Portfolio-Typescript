@@ -19,17 +19,20 @@ import { SiMysql } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { FaVuejs } from 'react-icons/fa';
 import { SiPython } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
 
 
 import { BsArrowLeftShort } from 'react-icons/bs';
+import { shade } from 'polished';
 
 export const ArrowLeftIcon = styled(BsArrowLeftShort)`
     font-weight: bold;
     font-size: 2rem;
-    color: rgba(161, 161, 170, 1);
+    cursor: pointer;
+    color: ${props => props.theme.widget.borderItemsWidget};
 
     &:hover {
-        color: rgba(244, 244, 245, 1);
+        color: ${props => shade(0.15, `${props.theme.widget.borderItemsWidget}`)};
     }
 `;
 
@@ -139,6 +142,10 @@ export const VueJs = styled(FaVuejs)`
     color: #018233;
 `;
 export const PythonIcon = styled(SiPython)`
+    font-size: 2.3em;
+    color: ${props => props.theme.colors.icons};
+`;
+export const JavaIcon = styled(FaJava)`
     font-size: 2.3em;
     color: ${props => props.theme.colors.icons};
 `;

@@ -37,7 +37,7 @@ const FormEmailJs: React.FC = () => {
           <input type="text" name="name" placeholder="Seu Nome..." value={nameInput} onChange={e => setNameInput(e.target.value)} required/>
           <input type="email" name="email" placeholder="Seu Email..." required/>
           <textarea cols={50} rows={4} placeholder="Sua mensagem" name='message' required></textarea>
-          {loading ? <button><Spinner/></button> : <> {disabledBtn ? <button disabled >Enviar</button> : <button>Enviar</button>}</>}
+          {loading ? <button><Spinner/></button> : <> {disabledBtn ? <button disabled >Send</button> : <button>Send</button>}</>}
             {sended ? <h2> Entrarei em contato o mais breve possível. Obrigado!</h2> : null}
       </Container>
      </>

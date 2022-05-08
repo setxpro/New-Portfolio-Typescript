@@ -30,10 +30,7 @@ const ScreenshotButton: React.FC<ScreenshotButtonProps> = ({ onScreenshotTook, s
                 <ButtonScreenshot
                     type="button"
                     onClick={() => onScreenshotTook(null)}
-                    style={{
-                        backgroundImage: `url(${screenshot})`,
-                        backgroundPosition: 'center',
-                    }}
+                    screenshot={screenshot}
                 >
                 <TrashIcon />
             </ButtonScreenshot>

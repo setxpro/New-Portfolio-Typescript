@@ -33,8 +33,8 @@ const AboutContent: React.FC<Props> = ({title, aboutMe, image, linkCv, linkGithu
               ))}
          </C.ContentAreaMoreInfo>
           <C.Buttons>
-          <button>Download CV</button>
-          <button>Github</button>
+            <a href={linkCv}><button>Download CV</button></a>
+            <a href={linkGithub}><button>Github</button></a>
       </C.Buttons>
     </C.ContentRight>
       </C.Container>

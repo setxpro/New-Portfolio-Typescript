@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
+
 
 export const Container = styled.div`
 
@@ -21,7 +23,7 @@ export const Container = styled.div`
                 padding: .5rem;
 
                 &:focus {
-                    border-color: rgba(130, 87, 230, 1);
+                    border-color: ${props => props.theme.widget.borderItemsWidget};
                     outline: none;
                     
                     ::-webkit-scrollbar { width: 3px; }
@@ -74,7 +76,7 @@ export const ContentHeader = styled.div`
 export const SendFeedbackButton = styled.button`
     width: 100%;
     padding: 1rem;
-    background-color: rgba(130, 87, 230, 1);
+    background-color: ${props => shade(0.15, `${props.theme.widget.backgroundButton}`)};
     border-radius: 4px;
     border-color: transparent;
 
@@ -90,7 +92,7 @@ export const SendFeedbackButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        background: rgba(153, 109, 255, 1) 
+        background: ${props => props.theme.widget.borderItemsWidget};
     }
     &:focus {
         outline: 2px solid transparent;
@@ -103,7 +105,7 @@ export const SendFeedbackButton = styled.button`
 
     &:disabled {
         opacity: 0.5;
-        background-color: rgba(130, 87, 230,1);
-        color: #EDE88888;
+        background-color: ${props => shade(0.15, `${props.theme.widget.backgroundButton}`)};
+        color: ${props => shade(0.15, `${props.theme.widget.textSecondary}`)};
     }
 `;
