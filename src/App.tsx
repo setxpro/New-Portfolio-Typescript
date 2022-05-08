@@ -17,7 +17,6 @@ const App: React.FC = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme',light);
   const [disappearHeader, setDisappearHeader] = useState(false);
 
-  
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
   }
